@@ -12,9 +12,11 @@
     <header>
         <a href="#" class="logo">Ali Theeb</a>
         <nav class="navigation">
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#kontakt">Kontakt</a>
+            <a href="#services" data-de="Services" data-en="Services">Services</a>
+            <a href="#projects" data-de="Projects" data-en="Projects">Projects</a>
+            <a href="#kontakt" data-de="Kontakt" data-en="Contact">Kontakt</a>           
+            <button class="lang-flag active" data-lang="de" title="Deutsch">🇩🇪</button>
+            <button class="lang-flag" data-lang="en" title="English">🇬🇧</button>
             <button id="darkModeToggle">🌙</button>
         </nav>
     </header>
@@ -25,9 +27,16 @@
           <h1>
             <span id="typed"></span>
           </h1>         
-            <h4>Hallo, Ich bin Ali<br> <span>Informatiker</span></h4>
-            <h3>Student der Informatik</h3>
-            <a href="#projects" class="main-btn"> view my work</a>
+            <h4
+              data-de="Hallo, Ich bin Ali<br><span>Informatiker</span>"
+              data-en="Hello, I'm Ali<br><span>Computer Scientist</span>">
+              Hallo, Ich bin Ali<br><span>Informatiker</span>
+            </h4>
+            <h3
+              data-de="IT-Administrator, Softwareentwickler"
+              data-en= "IT-Administrator, Software Developer">
+              IT-Administrator, Softwareentwickler</h3>
+            <a href="#projects" class="main-btn">view my work</a>
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/ali-theeb-856b03305" target="_blank" title="linkedin"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://www.facebook.com/ali.dieb.33" target="_blank" title="facebook"><i class="fa-brands fa-facebook"></i></a>
@@ -37,45 +46,136 @@
     </section>
 
     <section class="about" id="about" data-aos="fade-up">
-        <h2 class="title">Über mich</h2>
-        <a href="assets/Ali Theeb.pdf" target="_blank" download class="download-btn">
-          📄 Lebenslauf herunterladen
-        </a>
+        <h2 class="title" data-de="Über mich" data-en="About Me">Über mich</h2>
+        <a href="assets/Ali Theeb.pdf" 
+   target="_blank" 
+   download 
+   class="download-btn"
+   data-de="📄 Lebenslauf herunterladen"
+   data-en="📄 Download CV">
+   📄 Lebenslauf herunterladen
+</a>
         <div class="content">
-            <p>Engagierter und technikbegeisterter Informatiker mit fundierten Kenntnissen in
-              Softwareentwicklung, App-Entwicklung, IT-Support, Netzwerktechnik und
-              Spieleentwicklung. Erfolgreich abgeschlossenes Studium der Informatik (B.Sc.)
-              und erste praktische Erfahrungen durch Praktika im MadiaLab an der Bergischen
-              Universität Wuppertal.
-              Besonders interessiert an Web-App-Entwicklung, künstliche Intelligenz. Motiviert,
-              mein technisches Wissen weiterzuentwickeln und innovative Lösungen in einem
-              dynamischen Team umzusetzen.</p>
+            <p
+              data-en="Highly motivated and results-driven Computer Science graduate (B.Sc.) with strong expertise in 
+              Software Development, Web and Application Development, IT Administration, IT Support, and Network Management.
+              Graduate of the Bergische Universität Wuppertal (Germany) with practical experience gained through internships 
+              at the MediaLab, where I contributed to the development and implementation of innovative software solutions.
+              Currently working as an IT Administrator and Software Developer, responsible for managing IT infrastructure,
+              maintaining networks and systems, troubleshooting technical issues, and developing scalable software solutions.
+              Experienced in analyzing system requirements, improving system performance, and supporting business operations 
+              through efficient and reliable IT services.
+              Particularly passionate about Web Application Development and Artificial Intelligence, with a strong commitment
+              to continuous learning and staying up to date with modern technologies and industry best practices.
+              A proactive team player with strong analytical and problem-solving skills, seeking to contribute my technical
+              expertise to a forward-thinking and innovative organization in the United Arab Emirates, while further developing
+              my professional career in a dynamic international environment."
+
+              data-de= "Ergebnisorientierter und engagierter Informatiker (B.Sc.) mit fundierten Kenntnissen in Softwareentwicklung, 
+              Web- und App-Entwicklung, IT-Administration, IT-Support sowie Netzwerktechnik. Absolvent der Bergischen 
+              Universität Wuppertal mit praktischer Erfahrung aus dem MediaLab, wo ich an technischen Projekten und
+              Softwarelösungen mitgewirkt habe.
+              Derzeit tätig als IT-Administrator und Softwareentwickler, mit Verantwortung für die Administration und 
+              Optimierung von IT-Infrastrukturen, Systemen und Netzwerken sowie für die Entwicklung und Implementierung 
+              moderner Softwarelösungen. Erfahrung in der Analyse technischer Anforderungen, der Fehlerbehebung und der 
+              kontinuierlichen Verbesserung von System- und Softwareperformance.
+              Besonderes Interesse gilt der Web-Applikationsentwicklung, modernen Softwarearchitekturen und Künstlicher 
+              Intelligenz. Ich arbeite strukturiert, lösungsorientiert und teamorientiert und bringe eine hohe Lernbereitschaft 
+              sowie starke analytische Fähigkeiten mit.
+              Motiviert, meine technischen Fähigkeiten in einem internationalen und innovativen Unternehmen in den VAE einzubringen 
+              und zur Entwicklung effizienter, skalierbarer und zukunftsorientierter IT-Lösungen beizutragen.">
+
+              Ergebnisorientierter und engagierter Informatiker (B.Sc.) mit fundierten Kenntnissen in Softwareentwicklung, 
+              Web- und App-Entwicklung, IT-Administration, IT-Support sowie Netzwerktechnik. Absolvent der Bergischen 
+              Universität Wuppertal mit praktischer Erfahrung aus dem MediaLab, wo ich an technischen Projekten und
+              Softwarelösungen mitgewirkt habe.
+              Derzeit tätig als IT-Administrator und Softwareentwickler, mit Verantwortung für die Administration und 
+              Optimierung von IT-Infrastrukturen, Systemen und Netzwerken sowie für die Entwicklung und Implementierung 
+              moderner Softwarelösungen. Erfahrung in der Analyse technischer Anforderungen, der Fehlerbehebung und der 
+              kontinuierlichen Verbesserung von System- und Softwareperformance.
+              Besonderes Interesse gilt der Web-Applikationsentwicklung, modernen Softwarearchitekturen und Künstlicher 
+              Intelligenz. Ich arbeite strukturiert, lösungsorientiert und teamorientiert und bringe eine hohe Lernbereitschaft 
+              sowie starke analytische Fähigkeiten mit.
+              Motiviert, meine technischen Fähigkeiten in einem internationalen und innovativen Unternehmen in den VAE einzubringen 
+              und zur Entwicklung effizienter, skalierbarer und zukunftsorientierter IT-Lösungen beizutragen.</p>
         </div>
     </section>
 
     <section class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h3>2025 - aktuell</h3>
-          <p>Master Informationstechnologie an der Bergischen Universität Wuppertal</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h3>2024</h3>
-          <p>Praktikum beim MediaLab </p>
-        </div>
-      </div>
-       <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h3>2022 - 2025</h3>
-          <p>Bachlor an der Bergischen Universität Wuppertal</p>
-        </div>
-      </div>
-    </section>
+
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+     <h3 
+        data-de="2026 - aktuell"
+        data-en="2026 - Present">
+        2026 - aktuell
+      </h3>
+      <p 
+        data-de="Softwareentwicklung"
+        data-en="Software Development">
+        Softwareentwicklung
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h3 
+        data-de="2025 - aktuell"
+        data-en="2025 - Present">
+        2025 - aktuell
+      </h3>
+      <p 
+        data-de="Master Informationstechnologie an der Bergischen Universität Wuppertal"
+        data-en="Master’s Degree in Information Technology at the University of Wuppertal">
+        Master Informationstechnologie an der Bergischen Universität Wuppertal
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h3 
+        data-de="2025 - aktuell"
+        data-en="2025 - Present">
+        2025 - aktuell
+      </h3>
+      <p 
+        data-de="IT-Administrator bei der Firma Arbeit Remscheid"
+        data-en="IT Administrator at Arbeit Remscheid">
+        IT-Administrator bei der Firma Arbeit Remscheid
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h3>2024</h3>
+      <p 
+        data-de="Praktikum beim MediaLab"
+        data-en="Internship at MediaLab">
+        Praktikum beim MediaLab
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h3>2022 - 2025</h3>
+      <p 
+        data-de="Bachelor an der Bergischen Universität Wuppertal"
+        data-en="Bachelor’s Degree at the University of Wuppertal">
+        Bachelor an der Bergischen Universität Wuppertal
+      </p>
+    </div>
+  </div>
+
+</section>
     
     <section class="cards" id="services">
 <h2 class="title">Services</h2>
@@ -86,7 +186,11 @@
         </div>
         <div class="info">
             <h3>C/C#/C++/Unity/Blender</h3>
-            <p>Spielentwicklung.</p>
+            <p 
+              data-de="Spielentwicklung."
+              data-en="Game Development.">
+              Spielentwicklung.
+            </p>
         </div>
 </div>
 <div class="card">
@@ -94,8 +198,12 @@
       <i class="fa-brands fa-figma"></i>
     </div>
     <div class="info">
-        <h3>HTML/XML/CSS/Figma</h3>
-        <p>Webdesign, Webentwicklung.</p>
+        <h3>HTML/XML/CSS/Figma/Canva</h3>
+        <p
+              data-de="Webdesign, Webentwicklung."
+              data-en="Web Design & Web Development.">
+              Webdesign, Webentwicklung.
+            </p>
     </div>
 </div>
 <div class="card">
@@ -103,8 +211,12 @@
     <i class="fa-solid fa-database"></i>
   </div>
   <div class="info">
-      <h3>Datenbank</h3>
-      <p>MySQL, Firebase, FireStore.</p>
+      <h3
+              data-de="Datenbank"
+              data-en="Database">
+              Datenbank
+            </h3>
+      <p>MySQL, Firebase, FireStore, Docker.</p>
   </div>
 </div>
 
@@ -114,7 +226,11 @@
   </div>
   <div class="info">
       <h3>React/React-Native/Java-JavaFX-JavaScript</h3>
-      <p>Web-App-Entwicklung.</p>
+      <p
+              data-de="Web-App-Entwicklung."
+              data-en="Web & Mobile App Development.">
+              Web-App-Entwicklung.
+            </p>
   </div>
 </div>
 </div>
@@ -334,7 +450,11 @@
               a 15.9155 15.9155 0 0 1 0 -31.831" />
               <text x="18" y="20.35" class="percentage">80%</text>
             </svg>
-            <p>Datenbank</p>
+            <p
+              data-de="Datenbank"
+              data-en="Database">
+              Datenbank
+            </p>
           </div>
       
         </div>
@@ -355,8 +475,8 @@
             <div class="project-info">
               <p class="project-category"></p>
               <div class="project-title">
-                <span>Schachspiel</span>
-                <a href="#" class="mehr-info">Mehr Info</a>
+                <span data-de="Schachspiel" data-en="Chess Game">Schachspiel</span>
+                <a href="#" class="mehr-info" data-de="Mehr Info" data-en="More Info">Mehr Info</a>
               </div>
             </div>
           </div>
@@ -371,8 +491,8 @@
             <div class="project-info">
               <p class="project-category"></p>
               <div class="project-title">
-                <span>Internetkaufhaus</span>
-                <a href="#" class="mehr-info">Mehr Info</a>
+                <span data-de="Internetkaufhaus" data-en="Online Store">Internetkaufhaus</span>
+                <a href="#" class="mehr-info" data-de="Mehr Info" data-en="More Info">Mehr Info</a>
               </div>
             </div>
           </div>
@@ -387,8 +507,8 @@
             <div class="project-info">
               <p class="project-category"></p>
               <div class="project-title">
-                <span>Prüfungsverwaltung</span>
-                <a href="https://git.uni-wuppertal.de/2020209/tausend-und-eine-bug" target="_blank" class="mehr-info">Mehr Info</a>
+                <span data-de="Prüfungsverwaltung" data-en="Exam Management">Prüfungsverwaltung</span>
+                <a href="https://git.uni-wuppertal.de/2020209/tausend-und-eine-bug" target="_blank" class="mehr-info" data-de="Mehr Info" data-en="More Info">Mehr Info</a>
               </div>
             </div>
           </div>
@@ -407,8 +527,8 @@
             <div class="project-info">
               <p class="project-category"></p>
               <div class="project-title">
-                <span>Finanzverwaltung</span>
-                <a href="https://github.com/alitheeb/Thesis" target="_blank" class="mehr-info">Mehr Info</a>
+                <span data-de="Finanzverwaltung" data-en="Finance Management">Finanzverwaltung</span>
+                <a href="https://github.com/alitheeb/Thesis" target="_blank" class="mehr-info" data-de="Mehr Info" data-en="More Info">Mehr Info</a>
               </div>
             </div>
           </div>
@@ -425,8 +545,8 @@
             <div class="project-info">
               <p class="project-category"></p>
               <div class="project-title">
-                <span>DigitalToReal</span>
-                <a href="https://git.uni-wuppertal.de/2225091/webseite" target="_blank" class="mehr-info">Mehr Info</a>
+                <span data-de="DigitalToReal" data-en="Digital To Real">DigitalToReal</span>
+                <a href="https://git.uni-wuppertal.de/2225091/webseite" target="_blank" class="mehr-info" data-de="Mehr Info" data-en="More Info">Mehr Info</a>
               </div>
             </div>
           </div>
@@ -435,29 +555,31 @@
       </section>
       
     <section class="cards contekt" id="kontakt">
-        <h2 class="title">Lass uns zusammen arbeiten</h2>
-            <div class="content">
-                <div class="card">
-                    <div class="icon"> 
-                    <a href="tel:+4917632240039"><i class="fa-solid fa-mobile"></i></a>
-                </div>
-                <div class="info">
-                    <h3>Telefon</h3>
-                    <p>+4917632240039</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon"> 
-                    <a href="mailto:alitheeb78@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <h2 class="title" data-de="Lass uns zusammen arbeiten" data-en="Let's work together">Lass uns zusammen arbeiten</h2>
+    <div class="content">
+
+        <div class="card">
+            <div class="icon"> 
+                <a href="tel:+4917632240039"><i class="fa-solid fa-mobile"></i></a>
             </div>
             <div class="info">
-                <h3>Email</h3>
+                <h3 data-de="Telefon" data-en="Phone">Telefon</h3>
+                <p>+4917632240039</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon"> 
+                <a href="mailto:alitheeb78@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="info">
+                <h3 data-de="Email" data-en="Email">Email</h3>
                 <p>alitheeb78@gmail.com</p>
             </div>
         </div>
-        </div>
-    </section>
 
+    </div>
+</section>
     <footer class="footer">
         <p class="footer-title">Copyrights @ <span>Ali Theeb</span></p>
         <div class="social-icons">
@@ -477,7 +599,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       var typed = new Typed("#typed", {
-        strings: ["Hallo, Ich bin Ali", " Informatiker", " Student der Informatik"],
+        strings: ["Hallo, Ich bin Ali", " Informatiker", " Student der Informationstechnologie"],
         typeSpeed: 60,
         backSpeed: 30,
         backDelay: 1000,
@@ -521,6 +643,39 @@ document.querySelectorAll('.slider-container').forEach(container => {
   });
 
   showSlide(currentIndex);
+});
+</script>
+
+<script>
+function setLanguage(lang) {
+  document.querySelectorAll("[data-de]").forEach(el => {
+    el.innerHTML = el.getAttribute("data-" + lang);
+  });
+
+  const cvButton = document.querySelector(".download-btn");
+  if (lang === "en") {
+    cvButton.href = "assets/Ali Theeb en.pdf";
+  } else {
+    cvButton.href = "assets/Ali Theeb.pdf";
+  }
+
+  localStorage.setItem("language", lang);
+}
+
+const savedLang = localStorage.getItem("language") || "de";
+setLanguage(savedLang);
+
+document.querySelectorAll(".lang-flag").forEach(button => {
+  button.addEventListener("click", function() {
+    const lang = this.getAttribute("data-lang");
+    setLanguage(lang);
+
+    document.querySelectorAll(".lang-flag").forEach(btn =>
+      btn.classList.remove("active")
+    );
+
+    this.classList.add("active");
+  });
 });
 </script>
 

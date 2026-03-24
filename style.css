@@ -7,21 +7,59 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
  }
+/* ===============================
+   Language Flags (Next to Dark Mode)
+   =============================== */
 
-header{
-    background-color: #f0f0f0;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 200px;
+.lang-flag {
+  position: fixed;
+  top: 15px;
+  right: 90px;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 8px;
+  opacity: 0.6;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
+
+.lang-flag[data-lang="en"] {
+  right: 60px;
+}
+
+/* Hover */
+.lang-flag:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* Active language */
+.lang-flag.active {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
 
 body.dark-mode {
     background-color: #121212;
     color: #eee;
+}
+
+body.dark-mode .lang-flag {
+  filter: brightness(1.1);
+}
+
+body.dark-mode .logo {
+   color: #ffffff;
+}
+
+body.dark-mode .navigation a{
+   color: #ffffff;
+}
+
+body.dark-mode .navigation a:hover {
+    color: #bbb;
 }
 
 body.dark-mode .title {
@@ -250,7 +288,17 @@ body.dark-mode .title {
   right: 10px;
 }
 
-
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #d5d0d0;
+}
 
 .logo{
     text-decoration: none;
@@ -258,6 +306,7 @@ body.dark-mode .title {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.8em;
+    margin-left: -160px;
 }
 
 .navigation a{
@@ -266,6 +315,11 @@ body.dark-mode .title {
     font-weight: 500;
     font-size: 1.1em;
     padding-left: 30px;
+    gap: 10px;
+}
+
+.navigation a:last-of-type {
+    margin-right: 40px;
 }
 
 .navigation a:hover{
